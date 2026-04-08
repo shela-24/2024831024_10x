@@ -30,7 +30,7 @@ int main()
 
     SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL);
 
-    int radius = 100;
+    int radius = 200;
     int centerX = WIDTH / 2;
     int centerY = HEIGHT / 2;
 
