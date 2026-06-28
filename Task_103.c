@@ -61,7 +61,6 @@ int main() {
                                pow(playerY - autoY, 2));
 
         bool collision = distance <= (playerRadius + autoRadius);
-
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
@@ -71,6 +70,8 @@ int main() {
             SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
 
         drawCircle(renderer, autoX, autoY, autoRadius);
+        // Player circle
+        SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
         drawCircle(renderer, playerX, playerY, playerRadius);
 
         SDL_RenderPresent(renderer);
